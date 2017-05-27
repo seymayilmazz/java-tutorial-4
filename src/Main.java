@@ -32,5 +32,11 @@ public class Main {
         System.out.println("salary : " + employee2.salary);
         System.out.println();
 
+        changeReferenceTypeValue(employee1);
+        System.out.println("employee1 salary : " + employee1.salary);
+    }
+
+    public static void changeReferenceTypeValue(Employee employee){
+        employee.salary = 4000;
     }
 }
